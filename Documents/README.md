@@ -4,14 +4,6 @@ This guide explains how to collect radar data using the **ORANGE SAR**
 software and convert the recorded radar data into a Python-readable
 `.pkl` file for processing and visualization.
 
-------------------------------------------------------------------------
-
-## Prerequisites
-
--   Git installed
--   Python 3 installed
--   SSH access to the radar computer
--   Network connection to the radar system
 
 ------------------------------------------------------------------------
 
