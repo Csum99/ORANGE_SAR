@@ -3,7 +3,7 @@
 ## Get the code
 
 ```bash
-git clone <YOUR-COURSE-REPO-URL>
+git clone https://github.com/Csum99/ORANGE_SAR.git
 cd UAS_SAR_2026_student
 ```
 
