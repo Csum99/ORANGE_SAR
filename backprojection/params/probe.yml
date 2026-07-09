@@ -1,0 +1,47 @@
+# Simulation type; options are ['point', 'image', 'image_misalinged']
+sim_type: 'image'
+
+# Radar/waveform parameters
+center_freq: 4062500000 # (Hz)
+bandwidth: 2437500000 # (Hz)
+scan_rate: 25 # (Hz)
+duration: 8 # (seconds)
+range_min: 3 # (m)
+range_max: 50 # (m)
+
+# Platform motion parameters
+platform_init_pos: [-20, -15, 5] # Relative to image center; [X, Y, Z] (meters)
+platform_vel: [5, 0, 0] # [X, Y, Z] (meters/second)
+takeoff_speed: 5 # (meters/second)
+landing_speed: 2.5 # (meters/second)
+random_motion: False
+random_motion_magnitude: 0.125
+
+# Motion capture parameters
+motion_rate: 10 # (Hz)
+time_misalignment: 0 # (s)
+radar_displacement: [0, 0, 0] # (m)
+missing_fraction: 0
+
+# Timeline parameters
+motion_offset: [3, 5] # (s)
+radar_offset: [7, 10] # (s)
+
+# Image scatterer parameters
+source_image: './images/probe.jpg'
+downsampling_factor: 10
+image_center: [0, 0] # [X, Y] (meters)
+pixel_res: [0.05, 0.05] # [X, Y] (meters)
+pixel_thresholds: [0, 255]
+max_signal_val: 0
+
+# Propogation loss
+prop_loss: False
+
+# Beam parameters
+beam_limited: False
+beamwidth: 90 # (degrees)
+
+# Noise parameters
+add_noise: False
+noise_magnitude: 4

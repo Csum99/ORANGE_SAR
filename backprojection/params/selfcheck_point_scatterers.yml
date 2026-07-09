@@ -1,0 +1,38 @@
+# Parameters used by check_backprojection.py -- DO NOT EDIT (the checker relies on these).
+# Five point targets in an X pattern; the checker verifies your SAR image puts bright
+# spots at these exact locations.
+
+# Simulation type; options are ['point', 'image', 'image_misaligned']
+sim_type: 'point'
+
+# Radar/waveform parameters
+center_freq: 4062500000 # (Hz)
+bandwidth: 2437500000 # (Hz)
+scan_rate: 25 # (Hz)
+duration: 4 # (seconds)
+range_min: 0 # NOTE: the fourier approach assumes the range axis starts at 0 # (m)
+range_max: 30 # (m)
+
+# Platform motion parameters
+platform_init_pos: [-10, -15, 5] # Relative to image center; [X, Y, Z] (meters)
+platform_vel: [5, 0, 0] # [X, Y, Z] (meters/second)
+
+# Individual scatterer parameters
+scatterer_pos: # Relative to image center; [X, Y, Z] (meters)
+  - [-5, -5, 0]
+  - [-5, 5, 0]
+  - [0, 0, 0]
+  - [5, -5, 0]
+  - [5, 5, 0]
+scatterer_RCS: [10000, 10000, 10000, 10000, 10000]
+
+# Propagation loss
+prop_loss: False
+
+# Beam parameters
+beam_limited: False
+beamwidth: 90 # (degrees)
+
+# Noise parameters
+add_noise: False
+noise_magnitude: 4

@@ -1,0 +1,32 @@
+# Simulation type; options are ['point', 'image', 'image_misaligned']
+sim_type: 'image'
+
+# Radar/waveform parameters
+center_freq: 4062500000 # (Hz)
+bandwidth: 2437500000 # (Hz)
+scan_rate: 50 # (Hz)
+duration: 20 # (seconds)
+range_min: 10 # (m)
+range_max: 40 # (m)
+
+# Platform motion parameters
+platform_init_pos: [-10, -10, 10] # Relative to image center; [X, Y, Z] (meters)
+platform_vel: [.5, 0, 0] # [X, Y, Z] (meters/second)
+
+# Image scatterer parameters
+source_image: './images/butterfly.jpg'
+downsampling_factor: 2
+image_center: [0, 0] # [X, Y] (meters)
+pixel_res: [0.02, 0.02] # [X, Y] (meters)
+pixel_thresholds: [0, 255] 
+
+# Propogation loss
+prop_loss: False
+
+# Beam parameters
+beam_limited: False
+beamwidth: 90 # (degrees)
+
+# Noise parameters
+add_noise: False
+noise_magnitude: 4
