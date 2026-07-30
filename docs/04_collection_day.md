@@ -34,11 +34,11 @@ python control.py [mode] [options] [output_file]
 python control.py -q
 
 # 2. Real collection: name your file with your team and run number!
-python control.py -c -n 1000 team3_run1.prd
+python control.py -c -n 1000 SYRfinal_r1.prd
 
 # 3. IMMEDIATELY check what you recorded (uses your unpack.py ranging math):
-python unpack.py team3_run1.prd -v --keep_clutter
-python display_rti.py team3_run1.pkl
+python unpack.py SYRfinal_r1.prd -v --keep_clutter
+python display_rti.py SYRfinal_r1.pkl
 ```
 
 The RTI (Range-Time Intensity) plot from step 3 is your "did we get good data?" check —
